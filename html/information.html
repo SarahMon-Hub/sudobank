@@ -1,0 +1,271 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv="CACHE-CONTROL" content="no-cache">
+	<meta http-equiv="PRAGMA" content="no-cache">
+	<meta http-equiv="EXPIRES" content="-1">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="keywords" content="數度銀行，線上換匯，買賣外幣，美元，人民幣，外幣定存，HomePod mini，7-11電子禮券$50">
+	<meta name="description" content="數度銀行外幣狂換有禮，線上換匯享優惠，加碼抽HomePod mini、7-11電子禮券$50">
+	<meta property="og:type" content="website">
+	<meta property="og:image" content="images/fb.jpg">
+	<meta property="og:title" content="外幣狂換有禮-線上換匯享優惠-加碼抽HomePod mini-數度銀行">
+	<meta property="og:description" content="[數度銀行]線上換匯單筆等值金額達NT$5,000(含)以上加碼抽HomePod mini">
+	<title>外幣狂換有禮-線上換匯享優惠-加碼抽HomePod mini-數度銀行</title>
+	<!-- css -->
+	<link rel="stylesheet" href="/JsbankNew/Content/animate.css">
+	<link rel="stylesheet" href="/JsbankNew/Content/font-awesome.min.css" />
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="sky-2" onload="history.go(1);">
+	<div class="logo" style="position: relative;">
+		<a target="_blank" href="https://info.sudo.com">
+			<img src="images/logo.png"></a>
+	</div>
+	<div class="menu">
+		<a target="_blank" href="index.html">外幣美人優利定存</a>
+		<div class="divider"></div>
+		<a href="courtesy.html">好禮三重送</a>
+		<div class="divider"></div>
+		<a href="lottery.html">線上換匯加碼抽</a>
+		<div class="divider"></div>
+		<a class="blue" href="https://www.facebook.com/sharer.php?u=https://info.sudo.com/index.html"
+			target="_blank"><i class="fab fa-facebook"></i>分享</a>
+	</div>
+	<div class="mb_menu_btn_open pc_disappear"><i class="fas fa-bars fa-2x"></i></div>
+	<!--=====子選單(手機專用)=====-->
+	<div class="mb_menu disappear">
+		<ul class="mb_menu_list">
+			<li id="mb_menu_btn_close"><i class="fas fa-times fa-2x"></i></li>
+			<li>
+				<a href="index.html" target="_blank">外幣美人優利定存</a>
+			</li>
+			<li>
+				<a href="courtesy.html">好禮三重送</a>
+			</li>
+			<li>
+				<a href="lottery.html">線上換匯加碼抽</a>
+			</li>
+			<li>
+				<a class="blue" href="https://www.facebook.com/sharer.php?u=https://info.sudo.com/index.html"
+					target="_blank"><i class="fab fa-facebook"></i>分享</a>
+			</li>
+		</ul>
+	</div>
+	<div class="infoContent">
+		<div class="mb-3 title">闖關成功　<span class="d-inline-block">登錄抽好禮</span></div>
+		<p class="mt-1 font-weight-bold">
+			<i class="fas fa-caret-right"></i>
+			<a style="color: #666; text-decoration: underline;" href="index.html" target="_blank">外幣美人優利定存</a>
+		</p>
+		<p class="ssFont gray text-right">資料更新時間2025/11/7 上午 08:59:06</p>
+		<p class="ssFont brown mb-3 text-right">單位：年利率(%)</p>
+		<table class="table table-bordered table-rwd">
+			<thead class="orange2">
+				<tr>
+					<th scope="col">幣別</th>
+					<th scope="col">原幣承作門檻</th>
+					<th scope="col">1個月</th>
+					<th scope="col">2個月</th>
+					<th scope="col">3個月</th>
+					<th scope="col">6個月</th>
+					<th scope="col">9個月</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th scope="col" data-th="幣別">
+						<img src="images/usa-1.svg">美元</th>
+					<th scope="col" data-th="原幣承作門檻">1萬(含)以上</th>
+					<th scope="col" data-th="1個月">2.25</th>
+					<th scope="col" data-th="2個月">2.25</th>
+					<th scope="col" data-th="3個月">2.25</th>
+					<th scope="col" data-th="6個月">2.25</th>
+					<th scope="col" data-th="9個月">2.25</th>
+				</tr>
+				<tr>
+					<th scope="col" data-th="幣別">
+						<img src="images/RMB-2.svg">人民幣</th>
+					<th scope="col" data-th="原幣承作門檻">2萬(含)以上</th>
+					<th scope="col" data-th="1個月">0.40</th>
+					<th scope="col" data-th="2個月">0.40</th>
+					<th scope="col" data-th="3個月">0.45</th>
+					<th scope="col" data-th="6個月">0.50</th>
+					<th scope="col" data-th="9個月">0.50</th>
+				</tr>
+			</tbody>
+		</table>
+		<p class="ssFont brown mb-3">
+			*請務必填寫真實資料，以利得獎核對身分，若資料無法核實，視同放棄。
+		</p>
+		<p class="mb-3" style="background-color: #ffff99; color: #e02810; display: none;" id="lblAlert"></p>
+		<iframe id="ifrInfo" name="ifrInfo" src="/Busy.htm" width="0" height="0" style="display: none;"></iframe>
+		<form id="oForm" method="post" action="" target="ifrInfo">
+			<div class="form-group row mb-2">
+				<label for="UserName" class="col-md-2 col-4 px-0 col-form-label">姓名：</label>
+				<div class="col-sm-6 col-8 px-0">
+					<input type="text" class="form-control" name="UserName" id="UserName" maxlength="70" onblur="form_onblur();">
+				</div>
+			</div>
+			<div class="form-group row mb-2">
+				<label for="UserID" class="col-md-2 col-4 px-0 col-form-label">身分證字號：</label>
+				<div class="col-sm-6 col-8 px-0">
+					<input type="text" class="form-control" name="UserID" id="UserID" maxlength="10" onblur="form_onblur();" style="text-transform: uppercase">
+				</div>
+			</div>
+			<div class="form-group row mb-2">
+				<label for="Mobile" class="col-md-2 col-4 px-0 col-form-label">手機：</label>
+				<div class="col-sm-6 col-8 px-0">
+					<input type="text" class="form-control" name="Mobile" id="Mobile" maxlength="10" onblur="form_onblur();">
+				</div>
+			</div>
+			<div class="form-group row mb-2">
+				<label for="EMail" class="col-md-2 col-4 px-0 col-form-label">Email：</label>
+				<div class="col-sm-6 col-8 px-0">
+					<input type="text" class="form-control" name="EMail" id="EMail" maxlength="50" onblur="form_onblur();">
+				</div>
+			</div>
+			<div class="form-group row mb-2">
+				<label for="optAccept" class="col-md-2 col-4 pr-0 col-form-label">注意事項：</label>
+				<div class="col-sm-6 col-8 text-left px-0">
+					<input class="form-check-input" type="checkbox" value="Y" id="optAccept" onclick="form_onblur();">本人已詳閱並清楚知悉
+					<a target="_blank" href="CollectionInfo.pdf" class="Check1">「個人資料告知事項」</a>。
+				</div>
+			</div>
+		</form>
+		<ol class="mb-3">
+			<li>活動期間每人（同一身分證字號）限登錄乙次。</li>
+			<li>得獎名單將公布至<a target="_blank" href="https://info.sudo.com">本行官網</a>，並發送中獎通知至當初登錄的手機。如因資料填寫錯誤導致獎項無法寄送，視同放棄。</li>
+			<li>本行保有隨時更改或終止本活動之權利。如有變更將以網站公告為主，不另行通知。</li>
+		</ol>
+		<a class="button_org mb-2 mx-2" id="cmdSubmit" onclick="form_onsubmit();">確認送出</a>
+	</div>
+	<div class="carousel-1"></div>
+	<footer>
+		<span>服務專線：(02)6631-6588</span>
+		<span>數度銀行 info.sudo.com</span>
+		<span>
+			<a target="_blank" href="https://www.facebook.com/ispanTaipei">
+				<img src="images/fb.svg"></a>
+			<!--a target="_blank" href="https://www.instagram.com/sudo.info/">
+				<img src="images/ig.svg"></a-->
+			<a target="_blank" href="https://www.youtube.com/channel/UCObZbQQVeVvznp9TIPkqIPA">
+				<img src="images/yu.svg"></a>
+		</span>
+	</footer>
+	<!-- javascript -->
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/fontawesome5.js"></script>
+	<script src="js/menu.js"></script>
+	<script type="text/JavaScript" src="/Include/JSFunc.js?ver=20210919"></script>
+	<script type="text/JavaScript">
+	<!--
+	function input_reset()
+	{
+		oForm.UserID.style.border = '1px solid #ced4da';
+		oForm.Mobile.style.border = '1px solid #ced4da';
+		oForm.EMail.style.border = '1px solid #ced4da';
+	}
+
+	function form_onblur()
+	{
+		var strReason = strReason = '';
+		oForm.UserName.value = PF_Trim(oForm.UserName.value);
+		oForm.UserID.value = PF_Trim(oForm.UserID.value).toUpperCase();
+		oForm.Mobile.value = PF_Trim(oForm.Mobile.value);
+		oForm.EMail.value = PF_Trim(oForm.EMail.value);
+
+		if (oForm.UserName.value.length == 0 || oForm.UserID.value.length == 0 || oForm.Mobile.value.length == 0 || oForm.EMail.value.length == 0)
+		{
+			lblAlert.innerHTML = '※您輸入的資料不完整，請重新輸入！';
+			lblAlert.style.display = 'block';
+			return false;
+		}
+		
+		input_reset();
+		lblAlert.innerHTML = '';
+		
+		if (! PF_IsUid(oForm.UserID.value))
+		{
+			oForm.UserID.style.border = '1px solid #d15a46';
+
+			if (strReason == '')
+			{
+				lblAlert.innerHTML += '※請輸入正確的身分證字號！<br>';
+			}
+			else
+			{
+				lblAlert.innerHTML += '※' + strReason + '<br>';
+			}
+
+			//lblAlert.style.display = 'block';
+			//oForm.UserID.select();
+			//return false;
+		}
+
+		if (! PF_IsNum(oForm.Mobile.value) || oForm.Mobile.value.length != 10 || oForm.Mobile.value.substr(0, 2) != '09')
+		{
+			oForm.Mobile.style.border = '1px solid #d15a46';
+			lblAlert.innerHTML += '※請輸入正確的手機號碼！手機號碼必須為10碼數字。<br>';
+			//lblAlert.style.display = 'block';
+			//oForm.Mobile.select();
+			//return false;
+		}
+
+		if (! PF_VerifyEMail(oForm.EMail.value))
+		{
+			oForm.EMail.style.border = '1px solid #d15a46';
+			lblAlert.innerHTML += '※請輸入正確的電子郵件信箱！<br>';
+			//lblAlert.style.display = 'block';
+			//oForm.EMail.select();
+			//return false;
+		}
+		
+		if (! oForm.optAccept.checked)
+		{
+			//oForm.optAccept.style.border = '1px solid #d15a46';
+			lblAlert.innerHTML += '※請詳閱「個人資料告知事項」後勾選。<br>';
+			//lblAlert.style.display = 'block';
+			//oForm.optAccept.focus();
+			//return false;
+		}
+
+		if (lblAlert.innerHTML == '')
+		{
+			lblAlert.style.display = 'none';
+			input_reset();
+			return true;
+		}
+		else
+		{
+			lblAlert.style.display = 'block';
+			return false;
+		}
+	}
+	
+	function form_onsubmit()
+	{
+		if (! form_onblur())
+		{
+			return false;
+		}
+
+		cmdSubmit.style.visibility = 'hidden';
+		oForm.submit();
+	}
+	
+	function show_alert(str)
+	{
+		lblAlert.innerHTML = str;
+		lblAlert.style.display = 'block';
+		cmdSubmit.style.visibility = 'visible';
+	}
+	//-->
+	</script>
+</body>
+</html>
