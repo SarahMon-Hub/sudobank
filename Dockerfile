@@ -3,6 +3,6 @@ LABEL maintainer="sarah@sudo.com"
 RUN apt -y update
 RUN apt -y install nginx
 RUN apt -y install iputils-ping
-COPY ./sudobank/html/* /var/www/html
+COPY ./html /var/www/html
 EXPOSE 80
 CMD ["nginx", "-g", "daemon off;"]
